@@ -71,7 +71,7 @@ function NavBar() {
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
-                />
+                />{" "}
                 Projects
               </Nav.Link>
             </Nav.Item>
@@ -92,8 +92,8 @@ function NavBar() {
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <CgGitFork style={{ fontSize: "1.75em" }} />
+                Fork this Portfolio
               </Button>
             </Nav.Item>
           </Nav>

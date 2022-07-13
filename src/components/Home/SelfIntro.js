@@ -22,6 +22,7 @@ function Home2() {
               I'm fluent in Front-end classics like
               <i>
                 <b className="blue">
+                  {" "}
                   Javascript, React, Node.js and Typescript.
                 </b>
               </i>
@@ -56,7 +57,7 @@ function Home2() {
         <Row>
           <Col md={12} className="home-about-social">
             <h1>
-              Feel free to <span className="blue">connect </span>with me
+              Feel free to <span className="blue">connect</span> with me!
             </h1>
             <ul className="home-about-social-links">
               <li className="social-icons">
