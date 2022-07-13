@@ -10,10 +10,11 @@ import { AiOutlineDownload } from "react-icons/ai";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://github.com/Eldres/web-portfolio-2.0/files/9104076/Resume-Josh-Nagel.pdf";
+  "https://raw.githubusercontent.com/Eldres/web-portfolio-2.0/7e2b863ea73fab13ffa9e39bc05c5d92977ca097/src/Assets/Resume-Josh-Nagel.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  const [numPages, setNumPages] = useState(null);
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -35,8 +36,20 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          <Document
+            file={resumeLink}
+            className="d-flex justify-content-center"
+            onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+            pageLayout={"oneColumn"}
+          >
+            {Array.from(new Array(numPages), (el, index) => (
+              <Page
+                key={`page_${index + 1}`}
+                pageNumber={index + 1}
+                scale={width > 786 ? 0.87 : 0.6}
+                wrap={false}
+              />
+            ))}
           </Document>
         </Row>
 
