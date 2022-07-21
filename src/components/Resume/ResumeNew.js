@@ -10,7 +10,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://github.com/Eldres/web-portfolio-2.0/blob/e69dfb83912282e0352b51a4f0ed0a7a7afd2d9b/src/Assets/Resume-Josh-Nagel.pdf";
+  "https://drive.google.com/file/d/14FWXYG_RvQ1yWG8UCasI-mrI_RtvjODY/view?usp=sharing";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
