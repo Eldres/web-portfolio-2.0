@@ -10,7 +10,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://raw.githubusercontent.com/Eldres/web-portfolio-2.0/7e2b863ea73fab13ffa9e39bc05c5d92977ca097/src/Assets/Resume-Josh-Nagel.pdf";
+  "https://github.com/Eldres/web-portfolio-2.0/blob/e69dfb83912282e0352b51a4f0ed0a7a7afd2d9b/src/Assets/Resume-Josh-Nagel.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
