@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import askthedm from "../../Assets/Projects/askthedm_amazon.png";
 import meriwether from "../../Assets/Projects/kathies_website.png";
+import djangoBlog from "../../Assets/Projects/django_blog_project.png"
 
 function Projects() {
   return (
@@ -34,6 +35,16 @@ function Projects() {
               title="Meriwether Candle and Bodyworks"
               description="I made this website by myself for my Aunt to be used with her candle and bodyworks home business. This was an excellent test of my knowledge and skills acquired from school and what I learned on my own!"
               ghLink="https://github.com/Eldres/meriwether_candle-bodyworks"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={djangoBlog}
+              isBlog={true}
+              title="Blog using Python and Django"
+              description="A practice Blog project utilizing Python and the Django framework."
+              ghLink="https://github.com/Eldres/Blog-with-python-django"
             />
           </Col>
         </Row>

@@ -1,11 +1,12 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { DiJavascript1, DiReact, DiNodejs, DiGit } from "react-icons/di";
+import { DiJavascript1, DiReact, DiNodejs, DiGit, DiDjango } from "react-icons/di";
 import {
   SiFirebase,
   SiNextdotjs,
   SiKotlin,
   SiPostgresql,
+  SiPython
 } from "react-icons/si";
 
 function Techstack() {
@@ -34,6 +35,12 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql title="Postgresql" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiDjango title="Django" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPython title="Python" />
       </Col>
     </Row>
   );
