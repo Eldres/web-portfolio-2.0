@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="https://joshnagel.netlify.app/" target="_blank">joshnagelcsc.netlify.app</a>
+  <a href="https://joshnagel.netlify.app/" target="_blank">joshnagel.netlify.app</a>
 </h2>
 <br/>
 
