@@ -37,7 +37,6 @@ function Projects() {
               ghLink="https://github.com/Eldres/meriwether_candle-bodyworks"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={djangoBlog}
